@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMarket MVP</title>
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">🛒 SmartMarket</h1>
+        <ul class="nav-links">
+            <li><a href="#catalogSection">Каталог</a></li>
+            <li><a href="#sellerSection">Продавцам</a></li>
+            <li><a href="#adminSection">Статистика</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="aiBtn">AI Рекомендации</button>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Ваш онлайн-маркетплейс</h2>
+        <p>Легко продавать и покупать товары в одном месте. Быстрое добавление товаров, удобный каталог и персональные AI рекомендации.</p>
+        <a href="#catalogSection" class="cta-btn">Начать покупки</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/500x300" alt="Marketplace">
+    </div>
+</section>
+
+<!-- ================= CATALOG ================= -->
+<section id="catalogSection">
+    <h2>Каталог товаров</h2>
+    <div id="productGrid" class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Товар 1">
+            <h3>Товар 1</h3>
+            <p>₸ 5000</p>
+            <p class="description">Короткое описание товара для покупателей.</p>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <button>В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Товар 2">
+            <h3>Товар 2</h3>
+            <p>₸ 12000</p>
+            <p class="description">Качественный товар с высоким рейтингом.</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button>В корзину</button>
+        </div>
+        <!-- остальные карточки добавляются через JS -->
+    </div>
+</section>
+
+<!-- ================= SELLER REGISTRATION ================= -->
+<section id="sellerSection">
+    <h2>Регистрация магазина</h2>
+    <p>Создайте свой магазин и начните продавать уже сегодня.</p>
+    <form id="shopForm">
+        <input type="text" id="shopName" placeholder="Название магазина" required>
+        <input type="text" id="ownerName" placeholder="Имя владельца" required>
+        <input type="text" id="contact" placeholder="Контакт" required>
+        <button type="submit">Создать магазин</button>
+    </form>
+</section>
+
+<!-- ================= ADD PRODUCT ================= -->
+<section id="addProductSection">
+    <h2>Добавить товар</h2>
+    <p>Добавляйте новые товары в каталог вашего магазина.</p>
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Название товара" required>
+        <input type="number" id="productPrice" placeholder="Цена (₸)" required>
+        <input type="text" id="productImage" placeholder="Ссылка на изображение" required>
+        <button type="submit">Добавить товар</button>
+    </form>
+</section>
+
+<!-- ================= ADMIN STATS ================= -->
+<section id="adminSection">
+    <h2>Статистика платформы</h2>
+    <div class="stats">
+        <div class="stat-card">
+            <h3 id="salesCount">0</h3>
+            <p>Продажи</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="usersCount">0</h3>
+            <p>Пользователи</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="productsCount">0</h3>
+            <p>Товары</p>
+        </div>
+    </div>
+    <div id="aiRecommendations" class="ai-box">
+        <p>AI рекомендации появятся здесь</p>
+    </div>
+</section>
+
+<!-- ================= NEWS / UPDATES ================= -->
+<section id="newsSection">
+    <h2>Новости и обновления</h2>
+    <div class="news-grid">
+        <article class="news-card">
+            <h3>Новый функционал AI</h3>
+            <p>Теперь наш AI анализирует ваши предпочтения и рекомендует товары персонально для каждого пользователя.</p>
+        </article>
+        <article class="news-card">
+            <h3>Улучшение интерфейса магазина</h3>
+            <p>Обновленный интерфейс для продавцов с удобным управлением товарами.</p>
+        </article>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 SmartMarket MVP • Startup Version</p>
+    <div class="social-links">
+        <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
+        <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
+        <a href="#"><img src="https://via.placeholder.com/24" alt="Twitter"></a>
+    </div>
+</footer>
+
+<!-- Подключение скриптов -->
+<script src="script.js"></script>
+</body>
+</html>
